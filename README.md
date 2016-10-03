@@ -13,24 +13,7 @@ SELECT *
 	, (notiene5/(ST_Area(the_geom::GEOGRAPHY)/1000000)) as densidad
 FROM areas_geoestadisticas_municipales_1
 
-5. Para la leyenda use el siguiente codigo:
-
-<div class='cartodb-legend choropleth'>
-<div class="legend-title" style="color:#284a59">Densidad de niños sin partida por km2</div>
-<ul>
-	<li class="graph leg" style="border-radius: 0; border:none">
-<div class="colors">
-<div class="quartile" style="background-color:#FFFFB2"></div>
-<div class="quartile" style="background-color:#FECC5C"></div>
-<div class="quartile" style="background-color:#FD8D3C"></div>
-<div class="quartile" style="background-color:#F03B20"></div>
-<div class="quartile" style="background-color:#BD0026"></div>
-</div>
-	</li>
-<p style="padding-top:5px">
-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50
-</ul>
-</div>
+5. Para la leyenda use el codigo incluido en carto_legend
 
 6. Los mapas estan disponibles en:
 https://n0wh3r3m4n.carto.com/viz/a77536ba-e238-4913-9d60-402139a1ebb2/public_map (densidad de niños)
